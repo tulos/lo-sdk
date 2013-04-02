@@ -27,8 +27,13 @@ and upload it to clojars.
 
 ## License
 
+This packaging:
 Copyright (C) 2013 Tulos Capital
 
 Distributed under the MIT License, see
 [http://tulos.mit-license.org](http://tulos.mit-license.or)
+for details.
+
+The underlying jars:
+Various, see [LICENSE.txt](http://raw.github.com/tulos/lo-sdk/master/LICENSE.txt)
 for details.
