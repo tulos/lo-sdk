@@ -6,7 +6,7 @@ rm -rf unpacked-jars/*
 echo "Unzipping jars..."
 cd input-jars/
 for x in *.jar; do
-    unzip -d ../unpacked-jars $x;
+    unzip -o -d ../unpacked-jars $x;
 done
 cd ..
 rm -rf unpacked-jars/META-INF/
