@@ -16,7 +16,7 @@ Once these requirements are met, this is the procedure to create a new
 lo-sdk release and push it to [Clojars](http://clojars.org/tulos/lo-sdk).
 
 1. Copy the current LibreOffice jars from your LibreOffice install into
-the `lo-sdk-jars/` folder.
+the `input-jars/` folder.
 
 2. Adjust the version number in `project.clj` to match the LibreOffice release.
 

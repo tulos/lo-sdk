@@ -1,20 +1,21 @@
 #!/bin/bash
 
-echo "Unzipping jars in lo-sdk-jars/..."
-cd lo-sdk-jars/
+file=`ls target/lo-sdk-*-standalone.jar`
+
+rm -rf unpacked-jars/*
+echo "Unzipping jars..."
+cd input-jars/
 for x in *.jar; do
-    unzip $x;
+    unzip -d ../unpacked-jars $x;
 done
 cd ..
-rm -rf lo-sdk-jars/META-INF/
+rm -rf unpacked-jars/META-INF/
 
 echo "Creating uberjar"
 lein uberjar
 
 echo "Creating pom.xml"
 lein pom
-
-file=`ls target/lo-sdk-*-standalone.jar`
 
 if [[ ! -f ${file} ]]; then
     echo "Error: ${file} doesn't exist!"

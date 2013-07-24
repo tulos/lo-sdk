@@ -4,6 +4,6 @@
   :license {:name "Various"
             :url "http://raw.github.com/tulos/lo-sdk/master/LICENSE.txt"}
   ;; Where are the LO-SDK class files?
-  :filespecs [{:type :path :path "lo-sdk-jars"}]
+  :filespecs [{:type :path :path "unpacked-jars"}]
   :jar-exclusions [#".*\.(jar)$"]
   :uberjar-exclusions [#".*\.(jar)$"])
